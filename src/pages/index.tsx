@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <Flex direction="column">
-        <Header />
+        
         <Banner />
         <Icon />
 
