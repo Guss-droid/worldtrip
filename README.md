@@ -1,5 +1,7 @@
 # worldtrip
 
+## about repository
+
 This repository is challenge from `Ignite`
 
 in that challenge was to be done:
@@ -7,8 +9,8 @@ in that challenge was to be done:
 - Chakra Ui ✔
 - Next Js ✔
 
-preview challenge :
+## preview layout :
 
 ### Layout web
 
-![Page home](https://github/Guss-droid/worldtrip/assets/pageHome.png)
+![Page home](https://github/Guss-droid/worldtrip/tree/continets/assets/pageHome.png)
