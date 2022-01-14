@@ -44,3 +44,4 @@ unfortunately I couldn't do it page continents dynamic because there were some b
 - Swiper
 - Sass
 - React Icons
+- Typescript
