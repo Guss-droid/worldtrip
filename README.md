@@ -1,6 +1,6 @@
-<h1 align="center">WorldTrip</h1>
+<h1 align="center">WorldTrip ✈</h1>
 
-## about repository
+## About repository 
 
 This repository is challenge from `Ignite`
 
@@ -14,7 +14,7 @@ unfortunately I couldn't do it page continents dynamic because there were some b
 
 ## Preview layout :
 
-## Layout web:
+## Layout web 💻:
 
 ## Page home:
 ![Page home](https://github.com/Guss-droid/worldtrip/blob/continents/assets/pageHome.png)
@@ -28,7 +28,7 @@ unfortunately I couldn't do it page continents dynamic because there were some b
 
 <hr />
 
-## Layout mobile 
+## Layout mobile 📱: 
 
 ## Page home
 
