@@ -10,7 +10,7 @@ in that challenge was to be done:
 - Next Js ✔
 - Swiper Countries ✔
 
-unfortunately I couldn't do it page continents dynamic because there were some bugs with next
+unfortunately I couldn't do it page continents dynamic because there were some bugs with next ❌
 
 ## Preview layout :
 
@@ -37,7 +37,7 @@ unfortunately I couldn't do it page continents dynamic because there were some b
 ## Page continents
 ![Page continents](https://github.com/Guss-droid/worldtrip/blob/continents/assets/responsiveContinents.png)
 
-## Used Libs
+## Used Libs 📕
 
 - Chakra Ui / React
 - Next
