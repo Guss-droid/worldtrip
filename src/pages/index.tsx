@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Flex, Heading, Divider as Separator, Box } from '@chakra-ui/react'
 
 import { Banner } from '../components/Banner'
-import { Header } from '../components/Header'
 import { Icon } from '../components/IconsInfos'
 import { Divider } from '../components/Divider'
 import { Swipper } from '../components/SwipperUi'

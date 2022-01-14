@@ -80,7 +80,7 @@ export function Swipper() {
 
         <SwiperSlide>
           <Slider
-            link="/continent/southlAmerica"
+            link="/continent/southAmerica"
             image="/images/imageSouthAmerica.jpg"
             title="América do sul"
             subtitle="O continente tropical."
