@@ -17,7 +17,7 @@ export function BannerCountry({ continent, image }: IBanner) {
       bgSize="cover"
       bgPosition="center"
       align="center"
-      justify="flex-start"
+      justify={["center" ,"flex-start"]}
     >
       <Heading fontWeight="600" color="light.900">
         {continent}

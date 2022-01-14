@@ -17,7 +17,7 @@ export function Header() {
       w="100%"
       mx="auto"
       px="4"
-      h="12"
+      h={["6", "12"]}
     >
 
       <Grid
@@ -44,7 +44,13 @@ export function Header() {
             />
           </Link>
         }
-        <Image src='/images/logo.svg' alt="Logo" justifySelf="center" gridColumn="2" />
+        <Image
+          src='/images/logo.svg'
+          alt="Logo"
+          w={["81px", "184px"]}
+          justifySelf="center"
+          gridColumn="2"
+        />
       </Grid>
     </Flex>
   )
