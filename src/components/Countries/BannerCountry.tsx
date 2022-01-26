@@ -1,21 +1,26 @@
 import { Flex, Heading } from "@chakra-ui/react";
 
-export function BannerCountry() {
-  return(
+interface IBanner {
+  image: string;
+  continent: string;
+}
+
+export function BannerCountry({ continent, image }: IBanner) {
+  return (
     <Flex
       w="100%"
       h={["150", "500"]}
       px={["0", "36"]}
       pt={["0", "72"]}
-      bgImage="/images/bkEurope.svg"
+      bgImage={image}
       bgRepeat="no-repeat"
       bgSize="cover"
       bgPosition="center"
       align="center"
-      justify="flex-start"
+      justify={["center" ,"flex-start"]}
     >
       <Heading fontWeight="600" color="light.900">
-        Europa
+        {continent}
       </Heading>
     </Flex>
   )

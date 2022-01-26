@@ -1,56 +1,41 @@
-import { Grid, Heading } from "@chakra-ui/react";
-import { CardContent } from "./CardContent";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
-export function Card() {
+interface ICardContent {
+  cityImg: string;
+  flagImg: string;
+  country: string;
+  city: string;
+}
+
+export function Card({city, cityImg, country, flagImg}: ICardContent) {
   return (
-    <>
-      <Heading fontSize={["2xl", "4xl"]} mb="10">
-        Cidades +100
-      </Heading>
+    <Box borderRadius="4px" overflow="hidden" >
+      <Image w="100%" src={cityImg} alt="Country" />
 
-      <Grid
-        templateColumns={["1fr", "1fr 1fr", "repeat(4, 1fr)"]}
-        gap={["20px", "45px"]}
-        alignItems="center"
-        justifyContent="center"
-        px={["30px", "0"]}
+      <Flex
+        p="6"
+        align="center"
+        justify="space-between"
+        bg="light.900"
+        border="1px"
+        borderColor="yellow.50"
+        borderTop="0"
       >
-        <CardContent
-          city="Londres"
-          country="Reino Unido"
-          cityImg="/images/cardLondon.svg"
-          flagImg="/images/flagLondon.svg"
+        <Flex direction="column">
+          <Heading fontSize="xl" fontWeight="600">{city}</Heading>
+          <Text mt="3" fontSize="md" fontWeight="400">{country}</Text>
+        </Flex>
+        <Image
+          w="30px"
+          h="30px"
+          borderRadius="50%"
+          src={flagImg}
+          alt="flag"
+          border="1px"
+          borderColor="gray.500"
         />
+      </Flex>
 
-        <CardContent
-          city="Paris"
-          country="França"
-          cityImg="/images/cardParis.svg"
-          flagImg="/images/flagParis.svg"
-        />
-
-        <CardContent
-          city="Roma"
-          country="Itália"
-          cityImg="/images/cardItaly.svg"
-          flagImg="/images/flagItaly.svg"
-        />
-
-        <CardContent
-          city="Praga"
-          country="República Tcheca"
-          cityImg="/images/cardPraga.svg"
-          flagImg="/images/flagPraga.svg"
-        />
-
-        <CardContent
-          city="Amsterdã"
-          country="Holanda"
-          cityImg="/images/cardHolanda.svg"
-          flagImg="/images/flagHolanda.svg"
-        />
-
-      </Grid>
-    </>
+    </Box>
   )
 }

@@ -1,20 +1,24 @@
 import {
-  Box,
   Flex,
   Heading,
   Text,
-  Icon,
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-  PopoverArrow,
-  PopoverCloseButton,
-  PopoverBody,
 } from "@chakra-ui/react";
 
-import { RiInformationLine } from 'react-icons/ri'
+import { Popover } from "./Popover";
 
-export function Infos() {
+interface IInfos {
+  numberCountries: number;
+  numberLaguages: number;
+  citiesPopular: number;
+  mostVisited: string;
+}
+
+export function Infos({
+  citiesPopular,
+  mostVisited,
+  numberCountries,
+  numberLaguages
+}: IInfos) {
   return (
     <Flex align="center" justify="space-between">
 
@@ -24,7 +28,7 @@ export function Infos() {
           color="yellow.500"
           fontWeight="600"
         >
-          50
+          {numberCountries}
         </Heading>
         <Text fontWeight="600" fontSize={["md", "xl"]}>
           países
@@ -37,7 +41,7 @@ export function Infos() {
           color="yellow.500"
           fontWeight="600"
         >
-          60
+          {numberLaguages}
         </Heading>
         <Text fontWeight="600" fontSize={["md", "xl"]}>
           línguas
@@ -50,34 +54,12 @@ export function Infos() {
           color="yellow.500"
           fontWeight="600"
         >
-          27
+          {citiesPopular}
         </Heading>
         <Text fontWeight="600" fontSize={["md", "xl"]}>
           cidades +100
 
-          <Popover>
-            <PopoverTrigger>
-              <Box as="span">
-                <Icon
-                  as={RiInformationLine}
-                  w={["10px", "16px"]}
-                  h={["10px", "16px"]}
-                  ml="1"
-                  cursor="pointer"
-                  color="dark.50"
-                />
-              </Box>
-            </PopoverTrigger>
-
-            <PopoverContent bg="dark.500" color="yellow.500">
-              <PopoverArrow bg="dark.500" />
-              <PopoverCloseButton />
-
-              <PopoverBody fontWidth="400" fontSize="lg">
-                Portugal, Espanha, Suíça, França, Reino Unido, Alemanha, Itália, entre outros...
-              </PopoverBody>
-            </PopoverContent>
-          </Popover>
+          <Popover mostVisited={mostVisited} />
 
         </Text>
       </Flex>
